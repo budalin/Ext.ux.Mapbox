@@ -21,10 +21,9 @@ Ext.define('Ext.Mapbox', {
 		var me = this.map;
 		
 		me = mapbox.map(this.element.dom).zoom(2);
-		me.addLayer(mapbox.layer().id('arvindacumos.map-y2pwhu6l'));
+		me.addLayer(mapbox.layer().id('examples.map-vyofok3q'));
 		me.ui.attribution.add().content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
 		me.ui.zoomer.add();
-		// me.ui.refresh.add();
 		
 		/* create an empty layer */
 		var marker = mapbox.markers.layer();
@@ -57,10 +56,6 @@ Ext.define('Ext.Mapbox', {
 		        console.log('something went wrong!');
 		    }
 		});
-		
-		// this.map = mapbox.map(this.element.dom).zoom(2).center({ lat: 0, lon: 0 });
-		// this.map.addLayer(mapbox.layer().id('arvindacumos.map-y2pwhu6l'));
-		// this.map.ui.attribution.add().content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
 		
 	},
 	
